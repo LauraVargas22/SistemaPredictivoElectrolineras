@@ -11,6 +11,7 @@ Finalmente, los resultados obtenidos se analizarán y exportarán mediante archi
 
 ## Algoritmo
 
+```
 INICIO
 
 1. Cargar datos:
@@ -43,3 +44,4 @@ INICIO
    - Frecuencia de recarga
 
 FIN
+```
