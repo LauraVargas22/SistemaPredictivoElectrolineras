@@ -45,3 +45,21 @@ INICIO
 
 FIN
 ```
+
+## ▶️ Cómo Ejecutar el Programa
+
+1. Python instalado.
+2. Clonación del proyecto
+```
+https://github.com/LauraVargas22/SistemaPredictivoElectrolineras.git
+cd SistemaPredictivoElectrolineras
+```
+3. Instalar dependencias necesarias:
+```
+pip install pyfiglet rich matplotlib
+```
+
+4. Ejecutar el archivo principal:
+```
+python main.py
+```
