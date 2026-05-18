@@ -1,0 +1,92 @@
+[
+    {
+        "id": "pf_uis_central",
+        "nombre": "Universidad Industrial de Santander (Campus Central)",
+        "coordenadas": {
+            "latitud": 7.1402,
+            "longitud": -73.1201
+        },
+        "tipo": "universidad"
+    },
+    {
+        "id": "pf_uis_florida",
+        "nombre": "Universidad Industrial de Santander (Campus Florida)",
+        "coordenadas": {
+            "latitud": 7.0616,
+            "longitud": -73.0886
+        },
+        "tipo": "universidad"
+    },
+    {
+        "id": "pf_uis_guatiguara",
+        "nombre": "Universidad Industrial de Santander (Parque Tecnologico de Guatiguara en Piedecuesta)",
+        "coordenadas": {
+            "latitud": 6.9914,
+            "longitud": -73.05
+        },
+        "tipo": "universidad"
+    },
+    {
+        "id": "pf_uis_bucarica",
+        "nombre": "Universidad Industrial de Santander (Campus Bucarica - Centro de la ciudad)",
+        "coordenadas": {
+            "latitud": 7.1195,
+            "longitud": -73.1236
+        },
+        "tipo": "universidad"
+    },
+    {
+        "id": "pf_cenfer",
+        "nombre": "Centro de Ferias, Exposiciones y Convenciones de Bucaramanga - CENFER",
+        "coordenadas": {
+            "latitud": 7.081968,
+            "longitud": -73.154392
+        },
+        "tipo": "convenciones"
+    },
+    {
+        "id": "pf_unab",
+        "nombre": "Universidad Autonoma de Bucaramanga - UNAB",
+        "coordenadas": {
+            "latitud": 7.1257,
+            "longitud": -73.1185
+        },
+        "tipo": "universidad"
+    },
+    {
+        "id": "pf_uts",
+        "nombre": "Unidades Tecnologicas de Santander - UTS",
+        "coordenadas": {
+            "latitud": 7.1050,
+            "longitud": -73.1238
+        },
+        "tipo": "universidad"
+    },
+    {
+        "id": "pf_upb",
+        "nombre": "Universidad Pontificia Bolivariana - UPB",
+        "coordenadas": {
+            "latitud": 7.0381,
+            "longitud": -73.0722
+        },
+        "tipo": "universidad"
+    },
+    {
+        "id": "pf_ptar_rio_frio",
+        "nombre": "Planta de Tratamiento de aguas residuales de Bucaramanga PTAR - Rio Frio",
+        "coordenadas": {
+            "latitud": 7.0656,
+            "longitud": -73.1281
+        },
+        "tipo": "infraestructura"
+    },
+    {
+        "id": "pf_catay",
+        "nombre": "Sede Recreacional Catay",
+        "coordenadas": {
+            "latitud": 7.0285,
+            "longitud": -73.0891
+        },
+        "tipo": "recreacion"
+    }
+]
