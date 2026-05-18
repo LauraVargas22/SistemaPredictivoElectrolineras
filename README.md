@@ -1,65 +1,164 @@
 # SISTEMA PREDICTIVO PUNTOS DE CARGA EN VEHÍCULOS ELÉCTRICOS
 
-El incremento de vehículos eléctricos en el área metropolitana de Bucaramanga ha evidenciado algunas problemáticas como la ubicación y cobertura de los puntos de carga, lo cual obliga a los usuarios a recorrer mayores distancias para recargar sus vehículos.
-Lo mencionado anteriormente afecta la eficiencia de la movilidad eléctrica, especialmente cuando los vehículos alcanzan niveles bajos de batería. En los últimos años, los vehículos eléctricos han aumentado como una alternativa amigable con el medio ambiente. Por esta razón, este proyecto busca utilizar conceptos como la Teoría de Grafos, Inteligencia Artificial y Programación en Python para analizar la red vial, con el fin de encontrar rutas más eficientes y mejorar la distribución de las electrolineras.
+## Descripción del proyecto
 
-## Métodología del Problema
+Este proyecto consiste en una aplicación de consola desarrollada en Python que permite modelar una red vial urbana utilizando teoría de grafos. El sistema integra algoritmos clásicos de búsqueda de rutas, simulación de batería para vehículos eléctricos y modelos básicos de Machine Learning para analizar escenarios relacionados con movilidad y electrolineras.
 
-La metodología del proyecto consiste en la creación de un sistema para la optimización de electrolineras la cual se realizará mediante la recolección de datos de la red vial mediante herramientas como OpenStreetMap definiendo los puntos de carga y algunos sitios representativos, en base en esto se modelará la red vial como un grafo ponderado. 
-A partir de este modelo, se simularán recorridos de vehículos eléctricos, considerando su nivel de batería y su necesidad de recarga. En estos casos, se aplicarán algoritmos de Dijkstra para evaluar los caminos más cortos permitiéndole a los usuarios encontrar la mejor ruta. 
-Finalmente, los resultados obtenidos se analizarán y exportarán mediante archivos JSON, donde se visualice la frecuencia de uso de electrolineras y los recorridos realizados.
+El objetivo principal del proyecto es aplicar conceptos vistos en estructuras de datos, grafos, análisis de rutas e inteligencia artificial dentro de un entorno académico y práctico.
 
-## Algoritmo
+## Objetivos
+### Objetivo general
 
+Desarrollar un sistema predictivo de análisis vial basado en la teoría de grafos y fundamentos de programación con el propósito de calcular rutas óptimas, gestionar el uso de electrolineras y simular recorridos de vehículos eléctricos.
+
+### Objetivos específicos
+- Representar una red vial mediante grafos ponderados.
+- Simular consumo de batería en vehículos eléctricos.
+- Gestionar electrolineras y puntos fijos desde archivos JSON.
+- Comparar resultados entre algoritmos clásicos y modelos de IA.
+
+## Tecnologías utilizadas
+- Python
+- NetworkX
+- Folium
+- Pandas
+- NumPy
+- Scikit-learn
+- Pyfiglet -Rich (UI)
+
+## Funcionalidades principales
+1. Gestión de infraestructura: 
+- Agregar electrolineras
+- Eliminar electrolineras
+- Actualizar disponibilidad
+- Agregar puntos fijos
+- Eliminar puntos fijos
+- Crear conexiones automáticas entre nodos
+
+2. Almacenamiento de la información en archivos JSON.
+3. Construcción del grafo
+
+La red vial se construye mediante un grafo ponderado usando:
+- Distancia
+- Tiempo
+- Consumo energético
+
+Cada nodo representa:
+
+- Electrolineras
+- Puntos fijos
+
+Cada arista representa una conexión vial entre nodos.
+
+## Algoritmos implementados
+
+El proyecto implementa diferentes algoritmos de rutas:
+
+- Dijkstra: Buscar la ruta más corta
+- Floyd-Warshall	Calcular rutas mínimas globales
+
+Los algoritmos pueden trabajar con distintos pesos:
+
+- distancia_km
+- tiempo_min
+- consumo_kwh
+- Simulación de batería
+
+El sistema puede simular recorridos de vehículos eléctricos teniendo en cuenta:
+
+- Batería inicial
+- Consumo energético
+- Distancia recorrida
+- Tráfico
+- Recargas necesarias
+- Electrolineras disponibles
+
+Si la batería baja demasiado, el sistema busca automáticamente una estación de carga cercana.
+
+## Machine Learning
+
+El proyecto incluye un módulo básico de inteligencia artificial para:
+
+- Predecir consumo energético
+- Estimar tiempos de recorrido
+- Detectar necesidad de recarga
+- Analizar saturación de estaciones
+- Recomendar electrolineras
+- Modelos utilizados
+- Linear Regression
+- Random Forest
+
+## Estructura del proyecto
+```bash
+Proyecto/
+│
+├── data/
+│   ├── configuracion.json
+│   ├── electrolineras.json
+│   ├── puntos_fijos.json
+│   └── resultados.json
+│
+├── maps/
+│
+├── models/
+│
+├── modules/
+│   ├── grafo.py
+│   ├── infraestructura.py
+│   ├── inicializarData.py
+│   ├── mensajes.py
+│   ├── menus.py
+│   ├── modelos_ml.py
+│   ├── reportes.py
+│   ├── rutas.py
+│   ├── titles.py
+│   ├── visualizacion.py
+│   └── salir.py
+│
+├── utils/
+│   └── archivos.py
+│
+├── main.py
+├── requirements.txt
+└── README.md
 ```
-INICIO
 
-1. Cargar datos:
-   - Red vial
-   - Electrolineras
-   - Puntos de referencia
-   - Vehículos
-
-2. Construir el grafo
-
-3. Para i desde 1 hasta n recorridos hacer:
-   3.1 Seleccionar punto de inicio aleatorio
-   3.2 Asignar vehículo
-   3.3 Inicializar batería al 100%
-
-   3.4 Mientras el recorrido no termine:
-       - Moverse a siguiente nodo
-       - Reducir batería según distancia
-
-       SI batería ≤ 20% ENTONCES:
-           - Encontrar electrolinera más cercana
-           - Calcular ruta óptima (Dijkstra)
-           - Registrar recarga
-           - Restablecer batería
-
-4. Guardar resultados
-
-5. Generar estadísticas:
-   - Uso de electrolineras
-   - Frecuencia de recarga
-
-FIN
-```
-
-## ▶️ Cómo Ejecutar el Programa
-
-1. Python instalado.
-2. Clonación del proyecto
+## Instalación
+1. Clonar el proyecto
 ```
 https://github.com/LauraVargas22/SistemaPredictivoElectrolineras.git
+```
+2. Entrar a la carpeta
+```
 cd SistemaPredictivoElectrolineras
 ```
-3. Instalar dependencias necesarias:
+3. Instalar dependencias
 ```
-pip install pyfiglet rich matplotlib
+pip install -r requirements.txt
 ```
+4. Ejecución del sistema
 
-4. Ejecutar el archivo principal:
-```
 python main.py
-```
+
+## Aplicaciones:
+
+Durante el desarrollo del proyecto se aplicaron temas relacionados con:
+
+- Programación estructurada
+- Manejo de archivos JSON
+- Teoría de Grafos
+- Machine Learning
+- Persistencia de datos
+- Simulación
+- Visualización de datos
+
+## Conclusiones
+
+Este proyecto permitió integrar diferentes áreas de la programación y la ciencia de datos en una sola aplicación. Además de trabajar con grafos y rutas óptimas, también se exploró el uso de inteligencia artificial para apoyar la toma de decisiones en escenarios de movilidad eléctrica.
+
+## Autores
+
+Proyecto académico desarrollado por:
+- Laura Vargas
+- Nataly Ortega 
+- Josman Niño
