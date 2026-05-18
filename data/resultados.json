@@ -1,5 +1,458 @@
 {
-    "simulaciones": [],
-    "metricas_ml": [],
-    "comparaciones": []
+    "ultima_ruta": {
+        "ruta": [
+            "el_la_florida",
+            "pf_ptar_rio_frio",
+            "el_promotores_oriente",
+            "pf_cenfer"
+        ],
+        "distancia_km": 11.5,
+        "tiempo_min": 39.6,
+        "consumo_kwh": 2.08,
+        "distancia_floyd": 11.5,
+        "algoritmo": "floyd_warshall",
+        "peso": "distancia_km"
+    },
+    "ultima_simulacion": {
+        "tipo": "lote",
+        "cantidad_recorridos": 1,
+        "cantidad_recorridos_solicitados": 19,
+        "bateria_inicial_lote_pct": 40.0,
+        "ruta_final": [
+            "el_canaveral",
+            "el_cacique",
+            "pf_unab",
+            "1"
+        ],
+        "distancia_km": 11397.26,
+        "tiempo_min": 41316.89,
+        "consumo_kwh": 1800.77,
+        "bateria_final_pct": -8414.31,
+        "bateria_promedio_final_pct": -8414.31,
+        "bateria_final_ultimo_pct": -8414.31,
+        "recargas": [],
+        "alertas_bateria": [
+            {
+                "nodo": "1",
+                "bateria_pct": -8414.31,
+                "nivel": "critica",
+                "estacion_id": "1",
+                "estacion_nombre": "Homecenter",
+                "ruta_estacion": [
+                    "1"
+                ],
+                "distancia_estacion_km": 0,
+                "tiempo_estacion_min": 0,
+                "numero_recorrido": 1
+            }
+        ],
+        "electrolineras_utilizadas": [],
+        "electrolineras_sugeridas": [
+            {
+                "desde": "1",
+                "estacion_id": "1",
+                "estacion_nombre": "Homecenter",
+                "ruta_estacion": [
+                    "1"
+                ],
+                "distancia_estacion_km": 0,
+                "tiempo_estacion_min": 0,
+                "numero_recorrido": 1
+            }
+        ],
+        "simulaciones": [
+            {
+                "ruta_final": [
+                    "el_canaveral",
+                    "el_cacique",
+                    "pf_unab",
+                    "1"
+                ],
+                "ruta_planificada": [
+                    "el_canaveral",
+                    "el_cacique",
+                    "pf_unab",
+                    "1"
+                ],
+                "distancia_km": 11397.26,
+                "tiempo_min": 41316.89,
+                "consumo_kwh": 1800.77,
+                "bateria_final_pct": -8414.31,
+                "pasos": [
+                    {
+                        "origen": "el_canaveral",
+                        "destino": "el_cacique",
+                        "distancia_km": 5.4,
+                        "tiempo_min": 18.85,
+                        "consumo_kwh": 0.85,
+                        "bateria_antes_kwh": 8.52,
+                        "bateria_restante": 7.67,
+                        "bateria_restante_pct": 35.99
+                    },
+                    {
+                        "origen": "el_cacique",
+                        "destino": "pf_unab",
+                        "distancia_km": 2.9,
+                        "tiempo_min": 13.05,
+                        "consumo_kwh": 0.46,
+                        "bateria_antes_kwh": 7.67,
+                        "bateria_restante": 7.21,
+                        "bateria_restante_pct": 33.84
+                    },
+                    {
+                        "origen": "pf_unab",
+                        "destino": "1",
+                        "distancia_km": 11388.96,
+                        "tiempo_min": 41284.99,
+                        "consumo_kwh": 1799.46,
+                        "bateria_antes_kwh": 7.21,
+                        "bateria_restante": -1792.25,
+                        "bateria_restante_pct": -8414.31
+                    }
+                ],
+                "recargas": [],
+                "alertas_bateria": [
+                    {
+                        "nodo": "1",
+                        "bateria_pct": -8414.31,
+                        "nivel": "critica",
+                        "estacion_id": "1",
+                        "estacion_nombre": "Homecenter",
+                        "ruta_estacion": [
+                            "1"
+                        ],
+                        "distancia_estacion_km": 0,
+                        "tiempo_estacion_min": 0
+                    }
+                ],
+                "advertencias": [],
+                "electrolineras_utilizadas": [],
+                "electrolineras_sugeridas": [
+                    {
+                        "desde": "1",
+                        "estacion_id": "1",
+                        "estacion_nombre": "Homecenter",
+                        "ruta_estacion": [
+                            "1"
+                        ],
+                        "distancia_estacion_km": 0,
+                        "tiempo_estacion_min": 0
+                    }
+                ],
+                "simulacion_interrumpida": true,
+                "motivo_interrupcion": "Bateria baja en 1. Se recomienda dirigirse a Homecenter.",
+                "destino_alcanzado": true,
+                "algoritmo": "floyd_warshall",
+                "peso": "tiempo_min",
+                "bateria_minima_pct": 20.0,
+                "recarga_objetivo_pct": 95.0,
+                "numero_recorrido": 1,
+                "bateria_inicial_recorrido_pct": 40.0,
+                "origen_id": "el_canaveral",
+                "destino_id": "1",
+                "vehiculo": "Fiat 500e Cabrio 24kWh",
+                "trafico": "alto"
+            }
+        ],
+        "simulacion_interrumpida": true,
+        "motivo_interrupcion": "Bateria baja en 1. Se recomienda dirigirse a Homecenter.",
+        "destino_alcanzado": true,
+        "algoritmo": "floyd_warshall",
+        "peso": "tiempo_min",
+        "origen_id": "el_canaveral",
+        "destino_id": "1",
+        "vehiculo": "Fiat 500e Cabrio 24kWh",
+        "trafico": "alto"
+    },
+    "metricas_ml": [
+        {
+            "modelo": "LinearRegression",
+            "mae": 0.73,
+            "tiempo": 0.01
+        },
+        {
+            "modelo": "RandomForest",
+            "accuracy": 1.0,
+            "tiempo": 0.07
+        }
+    ],
+    "comparacion_algoritmos": [
+        {
+            "ruta": [
+                "el_canaveral",
+                "el_cacique",
+                "pf_upb",
+                "pf_cenfer"
+            ],
+            "distancia_km": 14.6,
+            "tiempo_min": 52.2,
+            "consumo_kwh": 2.63,
+            "algoritmo": "dijkstra",
+            "peso": "distancia_km",
+            "tiempo_ejecucion_ms": 0.247
+        },
+        {
+            "ruta": [
+                "el_canaveral",
+                "el_cacique",
+                "pf_upb",
+                "pf_cenfer"
+            ],
+            "distancia_km": 14.6,
+            "tiempo_min": 52.2,
+            "consumo_kwh": 2.63,
+            "algoritmo": "dijkstra",
+            "peso": "tiempo_min",
+            "tiempo_ejecucion_ms": 0.089
+        },
+        {
+            "ruta": [
+                "el_canaveral",
+                "el_cacique",
+                "pf_upb",
+                "pf_cenfer"
+            ],
+            "distancia_km": 14.6,
+            "tiempo_min": 52.2,
+            "consumo_kwh": 2.63,
+            "algoritmo": "dijkstra",
+            "peso": "consumo_kwh",
+            "tiempo_ejecucion_ms": 0.066
+        },
+        {
+            "ruta": [
+                "el_canaveral",
+                "el_cacique",
+                "pf_upb",
+                "pf_cenfer"
+            ],
+            "distancia_km": 14.6,
+            "tiempo_min": 52.2,
+            "consumo_kwh": 2.63,
+            "distancia_floyd": 14.6,
+            "algoritmo": "floyd_warshall",
+            "peso": "distancia_km",
+            "tiempo_ejecucion_ms": 2.103
+        },
+        {
+            "ruta": [
+                "el_canaveral",
+                "el_cacique",
+                "pf_upb",
+                "pf_cenfer"
+            ],
+            "distancia_km": 14.6,
+            "tiempo_min": 52.2,
+            "consumo_kwh": 2.63,
+            "distancia_floyd": 52.2,
+            "algoritmo": "floyd_warshall",
+            "peso": "tiempo_min",
+            "tiempo_ejecucion_ms": 1.672
+        },
+        {
+            "ruta": [
+                "el_canaveral",
+                "el_cacique",
+                "pf_upb",
+                "pf_cenfer"
+            ],
+            "distancia_km": 14.6,
+            "tiempo_min": 52.2,
+            "consumo_kwh": 2.63,
+            "distancia_floyd": 2.63,
+            "algoritmo": "floyd_warshall",
+            "peso": "consumo_kwh",
+            "tiempo_ejecucion_ms": 1.549
+        }
+    ],
+    "simulaciones": [
+        {
+            "ruta_final": [
+                "el_canaveral",
+                "el_cacique",
+                "pf_unab",
+                "1"
+            ],
+            "ruta_planificada": [
+                "el_canaveral",
+                "el_cacique",
+                "pf_unab",
+                "1"
+            ],
+            "distancia_km": 11397.26,
+            "tiempo_min": 41316.89,
+            "consumo_kwh": 1800.77,
+            "bateria_final_pct": -8414.31,
+            "pasos": [
+                {
+                    "origen": "el_canaveral",
+                    "destino": "el_cacique",
+                    "distancia_km": 5.4,
+                    "tiempo_min": 18.85,
+                    "consumo_kwh": 0.85,
+                    "bateria_antes_kwh": 8.52,
+                    "bateria_restante": 7.67,
+                    "bateria_restante_pct": 35.99
+                },
+                {
+                    "origen": "el_cacique",
+                    "destino": "pf_unab",
+                    "distancia_km": 2.9,
+                    "tiempo_min": 13.05,
+                    "consumo_kwh": 0.46,
+                    "bateria_antes_kwh": 7.67,
+                    "bateria_restante": 7.21,
+                    "bateria_restante_pct": 33.84
+                },
+                {
+                    "origen": "pf_unab",
+                    "destino": "1",
+                    "distancia_km": 11388.96,
+                    "tiempo_min": 41284.99,
+                    "consumo_kwh": 1799.46,
+                    "bateria_antes_kwh": 7.21,
+                    "bateria_restante": -1792.25,
+                    "bateria_restante_pct": -8414.31
+                }
+            ],
+            "recargas": [],
+            "alertas_bateria": [
+                {
+                    "nodo": "1",
+                    "bateria_pct": -8414.31,
+                    "nivel": "critica",
+                    "estacion_id": "1",
+                    "estacion_nombre": "Homecenter",
+                    "ruta_estacion": [
+                        "1"
+                    ],
+                    "distancia_estacion_km": 0,
+                    "tiempo_estacion_min": 0
+                }
+            ],
+            "advertencias": [],
+            "electrolineras_utilizadas": [],
+            "electrolineras_sugeridas": [
+                {
+                    "desde": "1",
+                    "estacion_id": "1",
+                    "estacion_nombre": "Homecenter",
+                    "ruta_estacion": [
+                        "1"
+                    ],
+                    "distancia_estacion_km": 0,
+                    "tiempo_estacion_min": 0
+                }
+            ],
+            "simulacion_interrumpida": true,
+            "motivo_interrupcion": "Bateria baja en 1. Se recomienda dirigirse a Homecenter.",
+            "destino_alcanzado": true,
+            "algoritmo": "floyd_warshall",
+            "peso": "tiempo_min",
+            "bateria_minima_pct": 20.0,
+            "recarga_objetivo_pct": 95.0,
+            "numero_recorrido": 1,
+            "bateria_inicial_recorrido_pct": 40.0,
+            "origen_id": "el_canaveral",
+            "destino_id": "1",
+            "vehiculo": "Fiat 500e Cabrio 24kWh",
+            "trafico": "alto"
+        }
+    ],
+    "comparaciones": [
+        {
+            "origen_id": "el_canaveral",
+            "destino_id": "pf_cenfer",
+            "trafico": "alto",
+            "resultados": [
+                {
+                    "ruta": [
+                        "el_canaveral",
+                        "el_cacique",
+                        "pf_upb",
+                        "pf_cenfer"
+                    ],
+                    "distancia_km": 14.6,
+                    "tiempo_min": 52.2,
+                    "consumo_kwh": 2.63,
+                    "algoritmo": "dijkstra",
+                    "peso": "distancia_km",
+                    "tiempo_ejecucion_ms": 0.247
+                },
+                {
+                    "ruta": [
+                        "el_canaveral",
+                        "el_cacique",
+                        "pf_upb",
+                        "pf_cenfer"
+                    ],
+                    "distancia_km": 14.6,
+                    "tiempo_min": 52.2,
+                    "consumo_kwh": 2.63,
+                    "algoritmo": "dijkstra",
+                    "peso": "tiempo_min",
+                    "tiempo_ejecucion_ms": 0.089
+                },
+                {
+                    "ruta": [
+                        "el_canaveral",
+                        "el_cacique",
+                        "pf_upb",
+                        "pf_cenfer"
+                    ],
+                    "distancia_km": 14.6,
+                    "tiempo_min": 52.2,
+                    "consumo_kwh": 2.63,
+                    "algoritmo": "dijkstra",
+                    "peso": "consumo_kwh",
+                    "tiempo_ejecucion_ms": 0.066
+                },
+                {
+                    "ruta": [
+                        "el_canaveral",
+                        "el_cacique",
+                        "pf_upb",
+                        "pf_cenfer"
+                    ],
+                    "distancia_km": 14.6,
+                    "tiempo_min": 52.2,
+                    "consumo_kwh": 2.63,
+                    "distancia_floyd": 14.6,
+                    "algoritmo": "floyd_warshall",
+                    "peso": "distancia_km",
+                    "tiempo_ejecucion_ms": 2.103
+                },
+                {
+                    "ruta": [
+                        "el_canaveral",
+                        "el_cacique",
+                        "pf_upb",
+                        "pf_cenfer"
+                    ],
+                    "distancia_km": 14.6,
+                    "tiempo_min": 52.2,
+                    "consumo_kwh": 2.63,
+                    "distancia_floyd": 52.2,
+                    "algoritmo": "floyd_warshall",
+                    "peso": "tiempo_min",
+                    "tiempo_ejecucion_ms": 1.672
+                },
+                {
+                    "ruta": [
+                        "el_canaveral",
+                        "el_cacique",
+                        "pf_upb",
+                        "pf_cenfer"
+                    ],
+                    "distancia_km": 14.6,
+                    "tiempo_min": 52.2,
+                    "consumo_kwh": 2.63,
+                    "distancia_floyd": 2.63,
+                    "algoritmo": "floyd_warshall",
+                    "peso": "consumo_kwh",
+                    "tiempo_ejecucion_ms": 1.549
+                }
+            ]
+        }
+    ]
 }

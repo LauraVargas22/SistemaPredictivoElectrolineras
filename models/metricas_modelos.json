@@ -1,0 +1,14 @@
+{
+    "metricas": [
+        {
+            "modelo": "LinearRegression",
+            "mae": 0.73,
+            "tiempo": 0.01
+        },
+        {
+            "modelo": "RandomForest",
+            "accuracy": 1.0,
+            "tiempo": 0.07
+        }
+    ]
+}

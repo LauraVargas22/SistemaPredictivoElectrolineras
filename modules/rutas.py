@@ -191,7 +191,7 @@ def simular_recorrido(grafo, origen, destino, vehiculo, algoritmo, peso, bateria
                 simulacion_interrumpida = True
                 destino_alcanzado = False
                 motivo_interrupcion = (
-                    f"Bateria baja en {siguiente} y no hay una electrolinera accesible."
+                    f"Bateria baja en {siguiente} recorrido y no hay una electrolinera accesible."
                 )
                 break
             else:
@@ -221,7 +221,7 @@ def simular_recorrido(grafo, origen, destino, vehiculo, algoritmo, peso, bateria
                 simulacion_interrumpida = True
                 destino_alcanzado = (siguiente == destino)
                 motivo_interrupcion = (
-                    f"Bateria baja en {siguiente}. Se recomienda dirigirse a "
+                    f"Bateria baja en {siguiente} recorrido. Se recomienda dirigirse a "
                     f"{estacion['estacion_nombre']}."
                 )
                 break
