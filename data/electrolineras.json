@@ -1,0 +1,74 @@
+[
+    {
+        "id": "el_quinta_etapa",
+        "nombre": "Centro Comercial Quinta Etapa",
+        "latitud": 7.115216,
+        "longitud": -73.108777,
+        "capacidad": 6,
+        "disponibilidad": 4,
+        "potencia": 40
+    },
+    {
+        "id": "el_cacique",
+        "nombre": "Centro Comercial Cacique",
+        "latitud": 7.0992,
+        "longitud": -73.1074,
+        "capacidad": 10,
+        "disponibilidad": 7,
+        "potencia": 60
+    },
+    {
+        "id": "el_canaveral",
+        "nombre": "Centro Comercial Canaveral",
+        "latitud": 7.071008,
+        "longitud": -73.106789,
+        "capacidad": 8,
+        "disponibilidad": 5,
+        "potencia": 50
+    },
+    {
+        "id": "el_terpel_piedecuesta",
+        "nombre": "Estacion de Servicio Terpel de Piedecuesta",
+        "latitud": 6.984173,
+        "longitud": -73.044189,
+        "capacidad": 5,
+        "disponibilidad": 3,
+        "potencia": 30
+    },
+    {
+        "id": "el_exito_rosita",
+        "nombre": "Exito de la Rosita",
+        "latitud": 7.114248,
+        "longitud": -73.122948,
+        "capacidad": 7,
+        "disponibilidad": 5,
+        "potencia": 40
+    },
+    {
+        "id": "el_la_florida",
+        "nombre": "Centro Comercial la Florida",
+        "latitud": 7.0705,
+        "longitud": -73.1055,
+        "capacidad": 6,
+        "disponibilidad": 4,
+        "potencia": 40
+    },
+    {
+        "id": "el_promotores_oriente",
+        "nombre": "Promotores del Oriente (via a Giron)",
+        "latitud": 7.085676,
+        "longitud": -73.164535,
+        "capacidad": 9,
+        "disponibilidad": 6,
+        "potencia": 60
+    },
+    {
+        "id": "1",
+        "nombre": "Homecenter",
+        "latitud": 7.115616,
+        "longitud": -73.121128,
+        "capacidad": 30,
+        "disponibilidad": 25,
+        "potencia": 45
+    }
+]
