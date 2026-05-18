@@ -1,0 +1,234 @@
+{
+    "nombre_proyecto": "Sistema vial y electrolineras del area metropolitana de Bucaramanga",
+    "ciudad_base": "Bucaramanga, Santander, Colombia",
+    "centro_mapa": {
+        "latitud": 7.1172,
+        "longitud": -73.1198
+    },
+    "bateria_minima_pct": 20,
+    "recarga_objetivo_pct": 95,
+    "consumo_base_kwh_km": 0.18,
+    "vehiculos": [
+        {
+            "id": "veh_fiat",
+            "nombre": "Fiat 500e Cabrio 24kWh",
+            "autonomia_km": 135,
+            "capacidad_bateria_kwh": 21.3,
+            "consumo_kwh_km": 0.158
+        },
+        {
+            "id": "veh_audi",
+            "nombre": "Audi S6 sportback e-tron",
+            "autonomia_km": 550,
+            "capacidad_bateria_kwh": 94.4,
+            "consumo_kwh_km": 0.117
+        }
+    ],
+    "simulacion_trafico": {
+        "leve": 1.0,
+        "medio": 1.2,
+        "alto": 1.45
+    },
+    "osm": {
+        "lugar": "Bucaramanga, Santander, Colombia",
+        "tipo_red": "drive"
+    },
+    "aristas": [
+        {
+            "origen": "pf_uis_central",
+            "destino": "pf_uts",
+            "distancia_km": 2.4,
+            "tiempo_min": 8,
+            "consumo_kwh": 0.43
+        },
+        {
+            "origen": "pf_uis_central",
+            "destino": "pf_unab",
+            "distancia_km": 1.8,
+            "tiempo_min": 6,
+            "consumo_kwh": 0.32
+        },
+        {
+            "origen": "pf_uis_central",
+            "destino": "el_exito_rosita",
+            "distancia_km": 1.6,
+            "tiempo_min": 5,
+            "consumo_kwh": 0.29
+        },
+        {
+            "origen": "pf_uis_central",
+            "destino": "pf_cenfer",
+            "distancia_km": 6.9,
+            "tiempo_min": 18,
+            "consumo_kwh": 1.24
+        },
+        {
+            "origen": "pf_uts",
+            "destino": "pf_unab",
+            "distancia_km": 1.3,
+            "tiempo_min": 5,
+            "consumo_kwh": 0.23
+        },
+        {
+            "origen": "pf_unab",
+            "destino": "el_cacique",
+            "distancia_km": 2.9,
+            "tiempo_min": 9,
+            "consumo_kwh": 0.52
+        },
+        {
+            "origen": "pf_unab",
+            "destino": "el_exito_rosita",
+            "distancia_km": 1.5,
+            "tiempo_min": 6,
+            "consumo_kwh": 0.27
+        },
+        {
+            "origen": "el_exito_rosita",
+            "destino": "el_quinta_etapa",
+            "distancia_km": 2.4,
+            "tiempo_min": 7,
+            "consumo_kwh": 0.43
+        },
+        {
+            "origen": "el_cacique",
+            "destino": "pf_upb",
+            "distancia_km": 2.1,
+            "tiempo_min": 7,
+            "consumo_kwh": 0.38
+        },
+        {
+            "origen": "pf_upb",
+            "destino": "pf_ptar_rio_frio",
+            "distancia_km": 6.0,
+            "tiempo_min": 15,
+            "consumo_kwh": 1.08
+        },
+        {
+            "origen": "pf_upb",
+            "destino": "pf_cenfer",
+            "distancia_km": 7.1,
+            "tiempo_min": 16,
+            "consumo_kwh": 1.28
+        },
+        {
+            "origen": "pf_ptar_rio_frio",
+            "destino": "pf_catay",
+            "distancia_km": 4.3,
+            "tiempo_min": 11,
+            "consumo_kwh": 0.77
+        },
+        {
+            "origen": "pf_ptar_rio_frio",
+            "destino": "el_la_florida",
+            "distancia_km": 3.2,
+            "tiempo_min": 10,
+            "consumo_kwh": 0.58
+        },
+        {
+            "origen": "pf_ptar_rio_frio",
+            "destino": "el_promotores_oriente",
+            "distancia_km": 5.1,
+            "tiempo_min": 14,
+            "consumo_kwh": 0.92
+        },
+        {
+            "origen": "el_la_florida",
+            "destino": "pf_uis_florida",
+            "distancia_km": 1.5,
+            "tiempo_min": 5,
+            "consumo_kwh": 0.27
+        },
+        {
+            "origen": "pf_uis_florida",
+            "destino": "pf_uis_bucarica",
+            "distancia_km": 4.4,
+            "tiempo_min": 12,
+            "consumo_kwh": 0.79
+        },
+        {
+            "origen": "pf_uis_florida",
+            "destino": "el_canaveral",
+            "distancia_km": 3.1,
+            "tiempo_min": 9,
+            "consumo_kwh": 0.56
+        },
+        {
+            "origen": "pf_uis_bucarica",
+            "destino": "el_canaveral",
+            "distancia_km": 2.4,
+            "tiempo_min": 8,
+            "consumo_kwh": 0.43
+        },
+        {
+            "origen": "pf_uis_bucarica",
+            "destino": "el_la_florida",
+            "distancia_km": 3.7,
+            "tiempo_min": 10,
+            "consumo_kwh": 0.67
+        },
+        {
+            "origen": "el_canaveral",
+            "destino": "el_terpel_piedecuesta",
+            "distancia_km": 8.3,
+            "tiempo_min": 18,
+            "consumo_kwh": 1.49
+        },
+        {
+            "origen": "el_canaveral",
+            "destino": "el_la_florida",
+            "distancia_km": 3.8,
+            "tiempo_min": 11,
+            "consumo_kwh": 0.68
+        },
+        {
+            "origen": "el_terpel_piedecuesta",
+            "destino": "pf_uis_guatiguara",
+            "distancia_km": 3.0,
+            "tiempo_min": 9,
+            "consumo_kwh": 0.54
+        },
+        {
+            "origen": "pf_uis_guatiguara",
+            "destino": "pf_catay",
+            "distancia_km": 6.2,
+            "tiempo_min": 15,
+            "consumo_kwh": 1.12
+        },
+        {
+            "origen": "el_la_florida",
+            "destino": "pf_catay",
+            "distancia_km": 4.7,
+            "tiempo_min": 12,
+            "consumo_kwh": 0.85
+        },
+        {
+            "origen": "el_promotores_oriente",
+            "destino": "pf_cenfer",
+            "distancia_km": 3.2,
+            "tiempo_min": 9,
+            "consumo_kwh": 0.58
+        },
+        {
+            "origen": "el_cacique",
+            "destino": "el_canaveral",
+            "distancia_km": 5.4,
+            "tiempo_min": 13,
+            "consumo_kwh": 0.97
+        },
+        {
+            "origen": "1",
+            "destino": "pf_uis_central",
+            "distancia_km": 11388.17,
+            "tiempo_min": 28470.42,
+            "consumo_kwh": 2049.87
+        },
+        {
+            "origen": "1",
+            "destino": "pf_unab",
+            "distancia_km": 11388.96,
+            "tiempo_min": 28472.41,
+            "consumo_kwh": 2050.01
+        }
+    ]
+}
